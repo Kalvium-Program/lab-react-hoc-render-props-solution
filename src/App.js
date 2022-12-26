@@ -1,23 +1,34 @@
-import logo from './logo.svg';
 import './App.css';
+import LikeImage from './components/LikeImage';
+import LikeImageHoc from './components/LikeImageHoc';
+import LikePost from './components/LikePost';
+import LikePostHoc from './components/LikePostHoc';
+import Wrapper from './components/Wrapper';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+
+      <h3>Some Blog</h3>
+
+{/* solution for render props */}
+
+      {/* <div className='buttons'>
+        <Wrapper render={(counter, handleIncreament)=>{
+          return <LikeImage likeImageCounter={counter} handleLikeImageCount = {handleIncreament}/>}}/>
+
+        <Wrapper render={(counter, handleIncreament)=>{
+          return <LikePost LikePostCounter={counter} handlePostCount = {handleIncreament}/>}}/>
+      </div> */}
+
+
+{/* solution for hoc */} 
+
+      <div className='buttons'>
+        <LikeImageHoc/>
+        <LikePostHoc/>
+      </div>
+
     </div>
   );
 }
