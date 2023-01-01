@@ -34,5 +34,4 @@ You can use any method  ( `class component` or `functional component` ) - in ord
 
 Happy Coding ❤️!
 
-
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="720" height="470" src="https://app.uizard.io/p/679b781b/embed" allowfullscreen></iframe>
+<iframe style=width:"720";height:"470" src="https://app.uizard.io/p/679b781b/embed"></iframe>
